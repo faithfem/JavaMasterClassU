@@ -18,7 +18,7 @@ public class Main {
                 System.out.println("was a 3 or 4, or 5");
                 break;
 
-            case 3:
+            default:
                 System.out.println("Was not 1 or 2");
                 break;
         }
