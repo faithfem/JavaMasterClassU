@@ -16,7 +16,8 @@ public class Main {
 
             case 3: case 4: case 5:
                 System.out.println("was a 3 or 4, or 5");
-                break;
+                System.out.println("Actually it was a " + switchValue);
+                //break;
 
             default:
                 System.out.println("Was not 1 or 2");
