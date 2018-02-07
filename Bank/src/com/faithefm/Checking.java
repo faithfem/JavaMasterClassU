@@ -10,14 +10,15 @@ public class Checking {
     //Create methods to Deposit and Withdraw funds
     public void deposit(double depositAmount) {
         this.balance += depositAmount;
+        System.out.println("Deposit of " + depositAmount);
     }
 
     public void withdrawal(double withdrawalAmount) {
-        if ( balance - withdrawalAmount <=0){
-        System.out.println("Only " + balance + "available Withdrawal not processed");
+        if ( this.balance - withdrawalAmount <=0){
+        System.out.println("Only " + this.balance + " available. Withdrawal not processed");
     } else{
-        balance -= withdrawalAmount;
-        System.out.println("Withdrawal of " + withdrawalAmount + " processed. Remaining balance = " + balance);
+        this.balance -= withdrawalAmount;
+        System.out.println("Withdrawal of " + withdrawalAmount + " processed. Remaining balance = " + this.balance);
     }
 
     }
