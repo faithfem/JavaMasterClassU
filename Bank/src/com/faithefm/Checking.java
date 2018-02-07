@@ -7,6 +7,22 @@ public class Checking {
     private String emailAddress;
     private String customerPhoneNumber;
 
+
+    public Checking(){
+        this("3955", 2.5, "Default Name", "Address", "Phone");
+        System.out.println("Empty constructor called");
+    }
+
+    public Checking(String number, double balance, String customerName, String emailAddress, String customerPhoneNumber){
+        System.out.println("Account constructor with parameters called");
+        this.number = number;
+        this.balance = balance;
+        this.customerName = customerName;
+        this.emailAddress = emailAddress;
+        this.customerPhoneNumber = customerPhoneNumber;
+    }
+
+
     //Create methods to Deposit and Withdraw funds
     public void deposit(double depositAmount) {
         this.balance += depositAmount;
