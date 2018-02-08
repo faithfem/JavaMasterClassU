@@ -18,6 +18,16 @@ public class Animal {
         this.name = name;
     }
 
+    //YOU CAN ALSO CREATE METHODS FOR THE ANIMALS, E.G., THEY ALL EAT, MOVE, ETC
+
+    private void eat(){
+
+    }
+
+    private void move(){
+
+    }
+
     //CREATED GETTERS TO ACCESS THE FIELDS WE WANT
     public int getBrain() {
         return brain;
