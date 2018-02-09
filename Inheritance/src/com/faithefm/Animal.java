@@ -21,7 +21,7 @@ public class Animal {
     //YOU CAN ALSO CREATE METHODS FOR THE ANIMALS, E.G., THEY ALL EAT, MOVE, ETC
 
     private void eat(){
-
+        System.out.println("Animal");
     }
 
     private void move(){

@@ -21,8 +21,9 @@ public class Dog extends Animal{
         // INITIALIZED BRAIN & BODY INSIDE THE CONSTRUCTOR, SO NOT NEEDED IN LINE ABOVE THAT SO COMMENTED OUT
         this.eyes = eyes;
         this.legs = legs;
+        this.tail = tail;
+        this.teeth = teeth;
         this.coat = coat;
-        this.
 
 
     }
