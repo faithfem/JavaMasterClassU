@@ -5,8 +5,7 @@ public class Dog extends Animal{
     // USE KEYWORD "extends" TO RELATE THIS CLASS TO THE ANIMAL CLASS
 
     // CAN CREATE VARIABLES THAT ARE UNIQUE TO DOGS ONLY
-    private boolean eyes;
-    private int eyesNumber;
+    private int eyes;
     private int legs;
     private int tail;
     private int teeth;
@@ -24,8 +23,16 @@ public class Dog extends Animal{
         this.tail = tail;
         this.teeth = teeth;
         this.coat = coat;
-
-
     }
 
+      private void chew(){
+          System.out.println("Dog.chew() called");
+      }
+
+    @Override
+    public void eat() {
+        System.out.println("Dog.eat() called");
+        chew();
+        super.eat();
+    }
 }
