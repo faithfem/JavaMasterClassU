@@ -5,13 +5,15 @@ public class Main {
     public static void main(String[] args) {
 
         //Call each Class into the Main class
-        Case theCase = new Case("220B","Dell", "240",(20,20,5)); //dimensions r an issue
-        Monitor monitor = new Monitor("Dell220", "Dell", 27,(1080,720)); //resolutions issue
-        Motherboard motherboard = new Motherboard("IBM2000","IBM",8,10,"700");
+        //Need to create a new class "Dimensions"
+        //Dimensions dimensions = new Dimensions(20,20,5);
+        Case theCase = new Case("220B","Dell", "240", 5); //dimensions r an issue
+        Monitor theMonitor = new Monitor("Dell220", "Dell",27,new Resolution(1040,720)); //resolutions issue
+        Motherboard theMotherboard = new Motherboard("IBM2000","IBM",8,10,"700");
 
         //Call the class that COMPOSES all the above
 
-        PC thePC = new PC(theCase, monitor, motherboard);
+        PC thePC = new PC(theCase, theMonitor, theMotherboard);
 
         //CALL THE METHODS in each Class:
 

@@ -9,18 +9,19 @@ public class Monitor {
     private String model;
     private String manufacturer;
     private int size;
-    private int resolution;
+    private Resolution nativeResolution;
+
 
     //After creating variables, create a CONSTRUCTOR for each variable.
     //CONSTRUCTORS start with "public" then the Class name, then brackets() and inside those brackets, enter
     //the variable part after "private", then squigly brackets, then
     //this.variable name = variable name;
 
-    public Monitor(String model, String manufacturer, int size, int resolution){
+    public Monitor(String model, String manufacturer, int size, Resolution nativeResolution){
         this.model = model;
         this.manufacturer = manufacturer;
         this.size = size;
-        this.resolution = resolution;
+        this.nativeResolution = nativeResolution;
     }
 
     //After the Constructor, create a METHOD
@@ -49,7 +50,7 @@ public class Monitor {
         return size;
     }
 
-    public int getResolution() {
-        return resolution;
+    public Resolution getNativeResolution() {
+        return nativeResolution;
     }
 }
