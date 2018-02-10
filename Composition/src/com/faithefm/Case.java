@@ -6,6 +6,7 @@ public class Case {
     private String manufacturer;
     private String powerSupply;
     //private int dimensions;
+    //created dimensions inside this class so I don't have to have an extra Dimensions class
     private int height;
     private int width;
     private int depth;

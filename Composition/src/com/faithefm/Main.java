@@ -11,7 +11,7 @@ public class Main {
         Monitor theMonitor = new Monitor("Dell220", "Dell",27,new Resolution(1040,720)); //resolutions issue
         Motherboard theMotherboard = new Motherboard("IBM2000","IBM",8,10,"700");
 
-        //Call the class that COMPOSES all the above
+        //Call the class that COMPOSES all the above. This is the PC Class.
 
         PC thePC = new PC(theCase, theMonitor, theMotherboard);
 
