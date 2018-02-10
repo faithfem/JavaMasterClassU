@@ -15,8 +15,8 @@ public class Dog extends Animal{
 
     // CREATE A CONSTRUCTOR THAT CALLS THE CONSTRUCTOR FOR ANIMAL
 
-    public Dog(/*int brain, int body,*/ int size, int weight, String name, int eyes, int legs, int tail, int teeth, String coat) { //INITIALIZE DOGS PARAMS TOO
-        super(1, 1, size, weight, name); //SUPER CLASS IS THE ANIMAL CLASS.
+    public Dog(/*int brain, int body,*/String name, int size, int weight, int eyes, int legs, int tail, int teeth, String coat) { //INITIALIZE DOGS PARAMS TOO
+        super(1,1,5,4,5,); //SUPER CLASS IS THE ANIMAL CLASS.
         // INITIALIZED BRAIN & BODY INSIDE THE CONSTRUCTOR, SO NOT NEEDED IN LINE ABOVE THAT SO COMMENTED OUT
         this.eyes = eyes;
         this.legs = legs;
